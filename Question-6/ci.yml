@@ -1,0 +1,23 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script:
+    - 
+
+build:
+  stage: build
+  script:
+    - 
+  artifacts:
+    paths:
+      - 
+deploy:
+  stage: deploy
+  environment:
+    name: production
+    url: https://your-production-app-url.com
+  script:

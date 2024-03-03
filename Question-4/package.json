@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@loopback/authentication": "^10.1.5"
+  }
+}

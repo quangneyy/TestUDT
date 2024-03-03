@@ -1,0 +1,14 @@
+Title: Synchronization of Products and Pricing Data
+
+Actor: Third-Party API
+Actor: Our Application
+Actor: Database
+
+Note: Third-party API data changes every hour.
+
+Our Application -> Third-Party API: Request products and pricing data
+Third-Party API --> Our Application: Send products and pricing data
+Our Application -> Database: Retrieve existing data from database
+Database --> Our Application: Send existing data
+Our Application -> Our Application: Merge new data with existing data
+Our Application -> Database: Save merged data to database
